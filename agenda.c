@@ -86,7 +86,7 @@ void insereContato(){
     buffer = realloc(buffer, (pControle->tamanhoBuffer));
     pControle = buffer;
     pContatos = buffer + (pControle->tamanhoBuffer) - sizeof(contato);
-    printf("\nNovo contato:\nNome: ");
+    printf("\nNovo contato\nNome: ");
     fgets(pContatos->nome, MAX, stdin);
     printf("Idade: ");
     fgets(pContatos->idade, TAM, stdin);
