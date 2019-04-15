@@ -46,6 +46,7 @@ void imprimeMenu();
 
 int main(){
     // no melhor caso, o usuário sai direto do programa (controleMenu == 5)
+    system("clear");
     buffer = malloc(sizeof(variavel));
     if (buffer == NULL){
         exit(1); 
@@ -53,7 +54,7 @@ int main(){
     pControle = buffer;
     pControle->controleMenu = 0;
     pControle->contadorContatos = 0;
-    printf("Felipe Saraiva Dos Santos\nEstruturas de Dados I - 2019/1\nAgenda (estrutura void *buffer)");
+    printf("Felipe Saraiva Dos Santos\nAED I - 2019/1\nAgenda");
     while(pControle->controleMenu != 5){
         imprimeMenu();
         scanf("%d", &pControle->controleMenu);
@@ -175,5 +176,5 @@ void imprimeContatos(){
 }
 
 void imprimeMenu(){
-    printf("\n1. Incluir Contato\n2. Apagar Contato\n3. Buscar Contato\n4. Imprimir Contatos\n5. Sair\nSelecione sua opção: ");
+    printf("\n--------------------\n1. Incluir Contato\n2. Apagar Contato\n3. Buscar Contato\n4. Imprimir Contatos\n5. Sair\nSelecione sua opção: ");
 }
