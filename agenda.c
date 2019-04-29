@@ -39,9 +39,9 @@ struct searchBar *pBusca;
 void insereContato();
 void apagaContato();
 void buscaContato();
-void ordenaContatos();
 void imprimeContatos();
 void imprimeMenu();
+void Insertionsort (int data[], int n);
 
 
 int main(){
@@ -70,7 +70,10 @@ int main(){
                 buscaContato();
                 break;
             case 4:
+                system("clear");
                 imprimeContatos();
+                printf("Enter para continuar...\n");
+                getchar();
                 break;
             default: 
                 if (pControle->controleMenu != 5){
@@ -78,6 +81,7 @@ int main(){
                 }
         }
     }
+    printf("\nSaindo da agenda...\nAgenda finalizada com sucesso!\n");
     free(buffer);
 }
 
@@ -178,3 +182,19 @@ void imprimeContatos(){
 void imprimeMenu(){
     printf("\n--------------------\n1. Incluir Contato\n2. Apagar Contato\n3. Buscar Contato\n4. Imprimir Contatos\n5. Sair\nSelecione sua opção: ");
 }
+
+//void Insertionsort (int data[], int n) { 
+//    contato *ordenaContatos;
+ //   ordenaContatos = buffer + sizeof(variavel) + sizeof(busca);
+//
+//    for (pControle->j = 1; pControle->j < contadorContatos; pControle->j++) { 
+//        pControle->i = pControle->j - 1;
+//        pControle->k = data[j]; 
+//        while ( (pControle->i >= 0) && (pControle->tmp < data[i]) ) { 
+//            data[i+1] = data[i];
+//             pControle->i--; 
+//        }//while
+//
+//        data[i+1] = pControle->tmp; 
+//    }//for
+// }//Insertionsort
