@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define MAX 50 // tamanho máximo dos nomes
 #define TAM 15 // tamanho de cada número de celular
-
+//MUDOU??
 // estrutura de um contato na agenda
 struct agenda{
     char nome[MAX];
